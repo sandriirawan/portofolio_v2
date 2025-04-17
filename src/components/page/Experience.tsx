@@ -29,7 +29,7 @@ export default function Experience({ experiences }: any) {
           </div>
         ))}
       </div>
-
+      {/*  */}
       {/* <Image
         src="/experience.png"
         alt="Totoro"
