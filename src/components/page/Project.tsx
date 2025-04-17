@@ -6,7 +6,7 @@ export default function Project({ projects }: any) {
   return (
     <section
       id="projects"
-      className="min-h-screen  px-10 py-10 bg-ghibliLeaf relative z-10">
+      className="min-h-screen px-4 py-10 bg-ghibliLeaf relative z-10">
       <h2 className="text-4xl font-extrabold mb-10 text-center text-ghibliBrown">
         Projects
       </h2>

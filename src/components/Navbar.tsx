@@ -54,7 +54,7 @@ export default function Navbar() {
         <li>
           <Link
             href="#home"
-            className=" text-ghibliBrown font-bold u"
+            className=" text-ghibliBrown font-bold "
             onClick={() => setIsOpen(false)}>
             Home
           </Link>

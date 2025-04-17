@@ -5,16 +5,16 @@ export default function Experience({ experiences }: any) {
   return (
     <section
       id="experience"
-      className="min-h-screen pt-20 px-10 py-10 flex flex-col justify-center items-center text-center relative ">
+      className="min-h-screen px-6 py-10 flex flex-col justify-center items-center text-center relative ">
       <h2 className="text-4xl font-extrabold mb-10 text-ghibliBrown">
         Experience
       </h2>
 
-      <div className="max-w-3xl w-full space-y-6 px-4">
+      <div className="w-full max-w-md space-y-6 ">
         {experiences.map((exp: any, i: number) => (
           <div
             key={i}
-            className="bg-white/70 backdrop-blur-md rounded-xl shadow-lg p-6 border border-ghibliForest/20 text-left transition hover:scale-[1.01]">
+            className=" bg-white/70 backdrop-blur-md rounded-xl shadow-lg p-6 border border-ghibliForest/20 text-left transition hover:scale-[1.01] ">
             <h3 className="text-2xl font-bold text-ghibliForest mb-1">
               {exp.title}
             </h3>

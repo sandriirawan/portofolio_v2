@@ -46,7 +46,7 @@ export default function Contact({ contact }: any) {
   return (
     <section
       id="contact"
-      className="min-h-screen pt-20 px-4 flex flex-col justify-center items-center text-center relative bg-ghibliLeaf">
+      className="min-h-screen px-4 flex flex-col justify-center items-center text-center relative bg-ghibliLeaf">
       <h2 className="text-4xl font-extrabold mb-6 text-ghibliBrown">
         Send a Message
       </h2>
