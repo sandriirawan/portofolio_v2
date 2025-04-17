@@ -5,7 +5,7 @@ export default function Experience({ experiences }: any) {
   return (
     <section
       id="experience"
-      className="min-h-screen pt-20 px-4 flex flex-col justify-center items-center text-center relative ">
+      className="min-h-screen pt-20 px-10 py-10 flex flex-col justify-center items-center text-center relative ">
       <h2 className="text-4xl font-extrabold mb-10 text-ghibliBrown">
         Experience
       </h2>
