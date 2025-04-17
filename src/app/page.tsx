@@ -70,7 +70,6 @@ export default function Home() {
       ],
     },
   ];
-  console.log(process.env.SERVICE_ID, "process.env.SERVICE_ID 11");
   const contact = {
     serviceId: process.env.SERVICE_ID,
     templateId: process.env.TEMPLATE_ID,

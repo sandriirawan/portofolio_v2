@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Ghibli Dev",
-  description: "Portofolio bertema Ghibli",
+  title: "Sandri Irawan",
+  description: "Portofolio sandri irawan",
 };
 
 export default function RootLayout({

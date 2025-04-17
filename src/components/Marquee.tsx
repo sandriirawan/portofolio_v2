@@ -1,4 +1,4 @@
-"use client"; // Menandakan bahwa komponen ini harus dijalankan di sisi klien
+"use client";
 
 import React from "react";
 
