@@ -15,13 +15,13 @@ export default function Project({ projects }: any) {
           <ProjectCard key={i} {...p} />
         ))}
       </div>
-      <Image
+      {/* <Image
         src="/project.png"
         alt="Totoro"
         width={120}
         height={120}
         className="absolute -bottom-2 right-0 z-10 animate-floatUp"
-      />
+      /> */}
     </section>
   );
 }

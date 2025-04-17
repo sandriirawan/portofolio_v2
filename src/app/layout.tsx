@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <main className="bg-ghibliCream ">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

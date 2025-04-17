@@ -90,7 +90,7 @@ export default function Contact({ contact }: any) {
         alt="Totoro"
         width={140}
         height={140}
-        className="absolute -bottom-2 right-4 z-10 animate-floatUp"
+        className="absolute bottom-0 right-2 z-10 "
       />
     </section>
   );

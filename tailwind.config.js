@@ -21,7 +21,7 @@ module.exports = {
         ghibliForest: "#355c4d",
       },
       fontFamily: {
-        ghibli: ['"Comic Neue"', "cursive"],
+        ghibli: ['"Inter"', "sans-serif"],
       },
       animation: {
         floatUp: "floatUp 4s ease-in-out infinite",

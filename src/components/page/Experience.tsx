@@ -30,13 +30,13 @@ export default function Experience({ experiences }: any) {
         ))}
       </div>
 
-      <Image
+      {/* <Image
         src="/experience.png"
         alt="Totoro"
         width={140}
         height={140}
         className="absolute -bottom-4 right-4 z-10 animate-floatUp"
-      />
+      /> */}
     </section>
   );
 }

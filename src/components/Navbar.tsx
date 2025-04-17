@@ -31,7 +31,7 @@ export default function Navbar() {
           <Image
             src="/sandri-work.png"
             alt="Avatar"
-            className="w-12 h-12 rounded-full animate-floatUp"
+            className="w-12 h-12 rounded-full"
             width={80}
             height={80}
           />
