@@ -3,75 +3,80 @@ import Link from "next/link";
 import React from "react";
 import { FaDownload, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
-import Marquee from "../Marquee";
 
 export default function Profile() {
   return (
     <section
       id="home"
-      className="min-h-screen pt-24 px-6 flex flex-col justify-center items-center text-center relative z-10 bg-gradient-to-b from-ghibliCream via-white to-ghibliLeaf">
-      <div className="relative">
+      className="min-h-screen pt-24 px-6 flex flex-col justify-center items-center text-center relative z-10 bg-gradient-to-b from-ghibliCream via-white to-ghibliLeaf animate-fadeIn">
+      {/* Avatar */}
+      <div className="relative group">
         <Image
           src="/sandri-avatar.jpg"
           alt="Avatar"
-          className="w-40 h-40 rounded-full border-4 border-ghibliAccent shadow-md animate-floatUp"
+          className="w-40 h-40 rounded-full border-4 border-ghibliAccent shadow-lg transition-transform duration-500 group-hover:scale-105 animate-floatUp"
           width={160}
           height={160}
         />
+        <div className="absolute bottom-0 right-0 bg-ghibliAccent p-1 rounded-full shadow-md animate-pulse">
+          🧑‍💻
+        </div>
       </div>
-      <h1 className="text-4xl md:text-5xl font-serif font-bold text-ghibliBrown mt-6">
+
+      {/* Name */}
+      <h1 className="text-4xl md:text-5xl font-serif font-bold mt-6 bg-gradient-to-r from-ghibliBrown to-ghibliNight text-transparent bg-clip-text">
         Hi! I&#39;m Sandri Irawan
       </h1>
-      <p className="mt-2 text-lg md:text-xl text-ghibliNight">
-        Full Stack Developer 🍃
+
+      {/* Description */}
+      <p className="mt-3 max-w-xl text-base text-ghibliNight leading-relaxed">
+        A{" "}
+        <span className="font-semibold text-ghibliAccent">
+          Full Stack Developer
+        </span>{" "}
+        with a love for clean code, modern tech, and elegant UI/UX. Experienced
+        in building digital solutions using{" "}
+        <span className="font-semibold">React Native, NextJS, NodeJS</span>, and
+        more.
       </p>
-      {/* About Section
-      <p className="mt-4 text-lg md:text-xl text-ghibliNight">
-        I am a Full Stack Developer with expertise in JavaScript and
-        technologies like React Native, ReactJS, NextJS, and NodeJS. I have
-        experience in creating innovative and effective digital solutions for
-        both web and mobile applications.
-      </p> */}
-      <p className="mt-3 max-w-xl text-base text-ghibliNight">
-        I am a Full Stack Developer with expertise in JavaScript and
-        technologies like React Native, ReactJS, NextJS, and NodeJS. I have
-        experience in creating innovative and effective digital solutions for
-        both web and mobile applications.
-      </p>
+
+      {/* CV Download */}
       <Link
         href="/cv-sandri.pdf"
         download
-        className="mt-6 inline-flex items-center gap-3 bg-ghibliAccent text-white px-6 py-2 rounded-full shadow-md hover:scale-105 hover:bg-orange-500 transition-all duration-200">
+        className="mt-6 inline-flex items-center gap-3 bg-ghibliAccent text-white px-6 py-2 rounded-full shadow-md hover:scale-105 hover:bg-orange-500 transition-all duration-300">
         <FaDownload className="animate-bounce-slow" />
         Download CV
       </Link>
+
+      {/* Social Links */}
       <div className="flex gap-5 mt-6">
-        <Link
+        <SocialIcon
           href="https://github.com/sandriirawan"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 bg-ghibliLeaf hover:bg-ghibliForest rounded-xl transition shadow-md hover:scale-110">
-          <FaGithub className="w-6 h-6 text-ghibliNight" />
-        </Link>
-        <Link
+          icon={<FaGithub />}
+        />
+        <SocialIcon
           href="https://www.linkedin.com/in/sandriirawann/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 bg-ghibliLeaf hover:bg-ghibliForest rounded-xl transition shadow-md hover:scale-110">
-          <FaLinkedin className="w-6 h-6 text-ghibliNight" />
-        </Link>
-        <Link
+          icon={<FaLinkedin />}
+        />
+        <SocialIcon
           href="mailto:sandriirawan01@gmail.com"
-          className="p-3 bg-ghibliLeaf hover:bg-ghibliForest rounded-xl transition shadow-md hover:scale-110">
-          <SiMinutemailer className="w-6 h-6 text-ghibliNight" />
-        </Link>
-        <Link
-          href="https://wa.me/6282310185744"
-          target="_blank"
-          className="p-3 bg-ghibliLeaf hover:bg-ghibliForest rounded-xl transition shadow-md hover:scale-110">
-          <FaWhatsapp className="w-6 h-6 text-ghibliNight" />
-        </Link>
+          icon={<SiMinutemailer />}
+        />
+        <SocialIcon href="https://wa.me/6282310185744" icon={<FaWhatsapp />} />
       </div>
     </section>
+  );
+}
+
+function SocialIcon({ href, icon }: { href: string; icon: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-3 bg-ghibliLeaf hover:bg-ghibliForest rounded-xl transition-all duration-300 shadow-md hover:scale-110">
+      <span className="w-6 h-6 text-ghibliNight">{icon}</span>
+    </Link>
   );
 }

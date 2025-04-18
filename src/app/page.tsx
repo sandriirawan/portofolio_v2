@@ -70,11 +70,13 @@ export default function Home() {
       ],
     },
   ];
+
   const contact = {
-    serviceId: process.env.SERVICE_ID,
-    templateId: process.env.TEMPLATE_ID,
-    publicKey: process.env.PUBLIC_KEY,
+    serviceId: process.env.SERVICE_ID || "",
+    templateId: process.env.TEMPLATE_ID || "",
+    publicKey: process.env.PUBLIC_KEY || "",
   };
+
   return (
     <div className="relative scroll-smooth font-ghibli bg-ghibliCream text-ghibliBrown">
       <Profile />

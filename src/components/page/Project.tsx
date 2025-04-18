@@ -1,8 +1,16 @@
-import React from "react";
 import ProjectCard from "../ProjectCard";
-import Image from "next/image";
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  link?: string;
+}
 
-export default function Project({ projects }: any) {
+interface ProjectProps {
+  projects: Project[];
+}
+
+export default function Project({ projects }: ProjectProps) {
   return (
     <section
       id="projects"
@@ -11,17 +19,10 @@ export default function Project({ projects }: any) {
         Projects
       </h2>
       <div className="grid gap-6 md:grid-cols-2">
-        {projects.map((p: any, i: any) => (
+        {projects.map((p, i) => (
           <ProjectCard key={i} {...p} />
         ))}
       </div>
-      {/* <Image
-        src="/project.png"
-        alt="Totoro"
-        width={120}
-        height={120}
-        className="absolute -bottom-2 right-0 z-10 animate-floatUp"
-      /> */}
     </section>
   );
 }
