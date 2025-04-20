@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaDownload, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { SiMinutemailer } from "react-icons/si";
+import { FaDownload } from "react-icons/fa";
 
 export default function Profile() {
   return (
@@ -68,14 +67,14 @@ export default function Profile() {
   );
 }
 
-function SocialIcon({ href, icon }: { href: string; icon: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-3 bg-ghibliLeaf hover:bg-ghibliForest rounded-xl transition-all duration-300 shadow-md hover:scale-110">
-      <span className="w-6 h-6 text-ghibliNight">{icon}</span>
-    </Link>
-  );
-}
+// function SocialIcon({ href, icon }: { href: string; icon: React.ReactNode }) {
+//   return (
+//     <Link
+//       href={href}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       className="p-3 bg-ghibliLeaf hover:bg-ghibliForest rounded-xl transition-all duration-300 shadow-md hover:scale-110">
+//       <span className="w-6 h-6 text-ghibliNight">{icon}</span>
+//     </Link>
+//   );
+// }
