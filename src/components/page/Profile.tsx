@@ -42,7 +42,7 @@ export default function Profile() {
 
       {/* CV Download */}
       <Link
-        href="/cv-sandri.pdf"
+        href="/CV-Sandri-irawan-2025.pdf"
         download
         className="mt-6 inline-flex items-center gap-3 bg-ghibliAccent text-white px-6 py-2 rounded-full shadow-md hover:scale-105 hover:bg-orange-500 transition-all duration-300">
         <FaDownload className="animate-bounce-slow" />
@@ -50,7 +50,7 @@ export default function Profile() {
       </Link>
 
       {/* Social Links */}
-      <div className="flex gap-5 mt-6">
+      {/* <div className="flex gap-5 mt-6">
         <SocialIcon
           href="https://github.com/sandriirawan"
           icon={<FaGithub />}
@@ -63,8 +63,7 @@ export default function Profile() {
           href="mailto:sandriirawan01@gmail.com"
           icon={<SiMinutemailer />}
         />
-        <SocialIcon href="https://wa.me/6282310185744" icon={<FaWhatsapp />} />
-      </div>
+      </div> */}
     </section>
   );
 }

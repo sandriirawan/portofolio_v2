@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { SiMinutemailer } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -18,6 +19,12 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="hover:text-ghibliLeaf transition">
           <FaLinkedin />
+        </a>
+        <a
+          href="mailto:sandriirawan01@gmail.com"
+          rel="noopener noreferrer"
+          className="hover:text-ghibliLeaf transition">
+          <SiMinutemailer />
         </a>
         <a
           href="https://x.com/sandriirawann"
